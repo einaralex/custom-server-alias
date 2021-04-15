@@ -4,14 +4,15 @@
   "scripts": {
     "dev": "nodemon",
     "build": "next build && tsc --project tsconfig.server.json",
-    "start": "cross-env NODE_ENV=production node dist/server/index.js",
+    "start": "cross-env NODE_ENV=production TS_NODE_PROJECT=tsconfig.build.json node -r tsconfig-paths/register dist/server/index.js",
     "go": "rm -rf .next && rm -rf dist && npm run build && npm run start"
   },
   "dependencies": {
     "cross-env": "^7.0.2",
     "next": "latest",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "tsconfig-paths": "^3.9.0"
   },
   "devDependencies": {
     "@types/node": "^12.0.12",

@@ -1,4 +1,5 @@
 {
+  "extends": "./tsconfig.build.json",
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
@@ -19,10 +20,7 @@
     "preserveConstEnums": true,
     "sourceMap": true,
     "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true,
-    "paths": {
-      "helpers/*": ["shared/helpers/*", "helpers/*"]
-    }
+    "resolveJsonModule": true
   },
   "exclude": ["dist", ".next", "out", "next.config.js"],
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
