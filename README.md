@@ -1,15 +1,17 @@
-# Custom server + Alias
 
-'helpers/*' should resolve to either './helpers' or './shared/helpers' 
 
-`npm run go` to build, start and observe error.
-
-# Custom server with TypeScript + Nodemon example (Custom Server + Alias)
+# Custom server with TypeScript + Nodemon + Server Alias example
 
 The example shows how you can use [TypeScript](https://typescriptlang.com) on both the server and the client while using [Nodemon](https://nodemon.io/) to live reload the server code without affecting the Next.js universal code.
 
 Server entry point is `server/index.ts` in development and `dist/server/index.js` in production.
 The second directory should be added to `.gitignore`.
+
+## Aliases
+
+`helpers/*` should resolve to either `./helpers` or `./shared/helpers`
+
+`npm run go` to build & start.
 
 ## How to use
 

@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "nodemon",
     "build": "next build && tsc --project tsconfig.server.json",
-    "start": "cross-env NODE_ENV=production TS_NODE_PROJECT=tsconfig.start.json node -r ts-node/register/transpile-only -r tsconfig-paths/register dist/server/index.js",
+    "start": "cross-env NODE_ENV=production TS_NODE_PROJECT=tsconfig.build.json node -r tsconfig-paths/register dist/server/index.js",
     "go": "rm -rf .next && rm -rf dist && npm run build && npm run start"
   },
   "dependencies": {
